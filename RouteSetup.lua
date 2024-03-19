@@ -215,12 +215,12 @@ function Guarda_Cartas_Exp_()
 
 Bag_Cartas_Exp = getObjectFromGUID("c892f0")
 
-if getObjectFromGUID("d709d6") then Bag_Cartas_Exp.putObject(getObjectFromGUID("d709d6")) end --Geologo
-if getObjectFromGUID("7e2dec") then Bag_Cartas_Exp.putObject(getObjectFromGUID("7e2dec")) end --Tokens
-if getObjectFromGUID("e18c95") then Bag_Cartas_Exp.putObject(getObjectFromGUID("e18c95")) end --Xamã
+if getObjectFromGUID("1999e7") then Bag_Cartas_Exp.putObject(getObjectFromGUID("1999e7")) end --Geologo
+if getObjectFromGUID("e22baf") then Bag_Cartas_Exp.putObject(getObjectFromGUID("e22baf")) end --Tokens
+if getObjectFromGUID("798fff") then Bag_Cartas_Exp.putObject(getObjectFromGUID("798fff")) end --Xamã
 if getObjectFromGUID("3275b3") then Bag_Cartas_Exp.putObject(getObjectFromGUID("3275b3")) end --Herois
 if getObjectFromGUID("72d26b") then Bag_Cartas_Exp.putObject(getObjectFromGUID("72d26b")) end --Animais
-if getObjectFromGUID("1505c3") then Bag_Cartas_Exp.putObject(getObjectFromGUID("1505c3")) end --Desbravadora
+if getObjectFromGUID("17f460") then Bag_Cartas_Exp.putObject(getObjectFromGUID("17f460")) end --Desbravadora
 
 end
 -------------------------------------------------------------------------------------------------------------------------------
@@ -289,10 +289,10 @@ Pos_Tab = Tab_Cartas.getPosition()
     Bag_Cartas_Exp.takeObject({position= {34.00, 1.55, 14.00}})
     Bag_Cartas_Exp.takeObject({position= {36.00, 1.55, 14.00}})
 
-    getObjectFromGUID("7e2dec").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
-    getObjectFromGUID("e18c95").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
-    getObjectFromGUID("d709d6").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
-    getObjectFromGUID("1505c3").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
+    getObjectFromGUID("e22baf").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
+    getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
+    getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
+    getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
     getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
     getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
 
@@ -303,18 +303,18 @@ Pos_Tab = Tab_Cartas.getPosition()
     Bag_Cartas_Exp.takeObject({position= {32.00, 1.55, 14.00}})
     Bag_Cartas_Exp.takeObject({position= {34.00, 1.55, 14.00}})
 
-    getObjectFromGUID("7e2dec").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
-    getObjectFromGUID("e18c95").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
-    getObjectFromGUID("d709d6").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
-    getObjectFromGUID("1505c3").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
+    getObjectFromGUID("e22baf").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
+    getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
+    getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
+    getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
     getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
     --getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
 
     else
-    getObjectFromGUID("7e2dec").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
-    getObjectFromGUID("e18c95").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
-    getObjectFromGUID("d709d6").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
-    getObjectFromGUID("1505c3").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
+    getObjectFromGUID("e22baf").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
+    getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
+    getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
+    getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
     getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
     getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
     end
@@ -3180,7 +3180,7 @@ Decks_Fixos = { "0bdd8e", "14d2d5", "24dc8a" }
 
 Decks_Base = { "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" } -- 7ae28e
-Decks_Exp = { "7e2dec", "e18c95", "d709d6", "1505c3", "72d26b" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "72d26b" }
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 ---Coloca nas bags
@@ -3258,7 +3258,7 @@ function Cor_Decks_Original()
 
 Decks_Base = { "0bdd8e", "14d2d5", "24dc8a", "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" }
-Decks_Exp = { "7e2dec", "e18c95", "d709d6", "1505c3", "72d26b" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "72d26b" }
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 Bag_Decks = getObjectFromGUID("c24b98")
