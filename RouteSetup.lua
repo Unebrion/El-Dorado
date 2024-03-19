@@ -218,8 +218,8 @@ Bag_Cartas_Exp = getObjectFromGUID("c892f0")
 if getObjectFromGUID("1999e7") then Bag_Cartas_Exp.putObject(getObjectFromGUID("1999e7")) end --Geologo
 if getObjectFromGUID("e22baf") then Bag_Cartas_Exp.putObject(getObjectFromGUID("e22baf")) end --Tokens
 if getObjectFromGUID("798fff") then Bag_Cartas_Exp.putObject(getObjectFromGUID("798fff")) end --Xamã
-if getObjectFromGUID("3275b3") then Bag_Cartas_Exp.putObject(getObjectFromGUID("3275b3")) end --Herois
-if getObjectFromGUID("72d26b") then Bag_Cartas_Exp.putObject(getObjectFromGUID("72d26b")) end --Animais
+if getObjectFromGUID("cfda4a") then Bag_Cartas_Exp.putObject(getObjectFromGUID("cfda4a")) end --Herois
+if getObjectFromGUID("b986e7") then Bag_Cartas_Exp.putObject(getObjectFromGUID("b986e7")) end --Animais
 if getObjectFromGUID("17f460") then Bag_Cartas_Exp.putObject(getObjectFromGUID("17f460")) end --Desbravadora
 
 end
@@ -293,8 +293,8 @@ Pos_Tab = Tab_Cartas.getPosition()
     getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
     getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
     getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
-    getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
-    getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
+    getObjectFromGUID("b986e7").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
+    getObjectFromGUID("cfda4a").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
 
   elseif N_decks == 5 then
     Bag_Cartas_Exp.takeObject({position= {26.00, 1.55, 14.00}})
@@ -307,16 +307,16 @@ Pos_Tab = Tab_Cartas.getPosition()
     getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
     getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
     getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
-    getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
-    --getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
+    getObjectFromGUID("b986e7").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
+    --getObjectFromGUID("cfda4a").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
 
     else
     getObjectFromGUID("e22baf").setPosition(Pos_Tab + vector( -1.10, 1, 6.6)) --Tokens
     getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
     getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
     getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
-    getObjectFromGUID("72d26b").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
-    getObjectFromGUID("3275b3").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
+    getObjectFromGUID("b986e7").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
+    getObjectFromGUID("cfda4a").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
     end
 
 end
@@ -1165,9 +1165,9 @@ Usar_Tokens_Exp = 1
 startLuaCoroutine(self, 'Cavernas_Ale')
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({10.33, 2, 12.71})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({10.33, 2, 12.71})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 
@@ -1225,9 +1225,9 @@ for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {6.59, 1.88+1*i, 5.72
 for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {-0.04, 1.88+1*i, 6.33}, smooth = true, callback_function = nil, rotation={0.00, 180.01, 180.00} }) end
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-8.69, 1.50, -4.91})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-8.69, 1.50, -4.91})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 -------------------------------------------------------------------------------------------------------------------------------------
@@ -1280,9 +1280,9 @@ for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {13.37, 1.88+1*i, 3.0
 for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {17.19, 1.88+1*i, -2.67}, smooth = true, callback_function = nil, rotation={0.00, 180.01, 180.00} }) end
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-8.35, 2, 13.24})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-8.35, 2, 13.24})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 
@@ -1336,9 +1336,9 @@ for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {16.64, 1.88+1*i, 10.
 for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {17.65, 1.88+1*i, 1.46}, smooth = true, callback_function = nil, rotation={0.00, 210.02, 180.00} }) end
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-3.55, 2, 13.39})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-3.55, 2, 13.39})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 
@@ -1391,9 +1391,9 @@ for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {13.72, 1.96+1*i, 3.2
 for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position ={17.5, 1.88+1*i, 11.17}, smooth = true, callback_function = nil, rotation={359.92, 225.02, 180.05} }) end
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({1.57, 2, 14.47})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({1.57, 2, 14.47})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 ------------------------------------------------------------------------------------------------------------------------
@@ -1449,9 +1449,9 @@ for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {10.47, 1.88+1*i, 3.5
 for i = 1, 4, 1 do Bag_caverna_exp.takeObject({ position = {10.58, 1.88+1*i, -0.96}, smooth = true, callback_function = nil, rotation= {0.00, 179.99, 180.00} }) end
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-3.33, 1.55, 1.74})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-3.33, 1.55, 1.74})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 end
 ------------------------------------------------------------------------------------------------------------------------
@@ -1528,9 +1528,9 @@ Bag_Barreiras_exp.takeObject( { position = {18.11, 1.73, 4.42}, smooth = false, 
 Bag_Barreiras_exp.takeObject({ position = {-10.38, 1.73, 4.44}, smooth = false, callback_function = take_callback2, rotation={0,0,0} })
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-0.71, 1.55, 4.65})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-0.71, 1.55, 4.65})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 Espera(1)
 broadcastToAll("<<< Aguardando carregamento para posicionar os tokens.  >>>", "White")
@@ -1713,9 +1713,9 @@ Bag_Barreiras.takeObject({ position = {33.89, 1.53, 24.36}, smooth = true, callb
 --Bag_Barreiras.takeObject({ position = {33.89, 1.53, 25.36}, smooth = true, callback_function = take_callback, rotation={0,90,0} })
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-13.47, 1.50, -1.99})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-13.47, 1.50, -1.99})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 Espera(1)
 broadcastToAll("<<< Aguardando carregamento para posicionar os tokens.  >>>", "White")
@@ -1920,9 +1920,9 @@ Bag_Barreiras.takeObject({ position = {33.89, 1.53, 23.36}, smooth = true, callb
 --Bag_Barreiras.takeObject({ position = {33.89, 1.53, 25.36}, smooth = true, callback_function = take_callback, rotation={0,90,0} })
 
 --POSICIONA DECK Herois
-getObjectFromGUID("3275b3").setPositionSmooth({-13.47, 1.50, -1.99})
-getObjectFromGUID("3275b3").setRotation({0.00, 180.00, 180.00})
-getObjectFromGUID("3275b3").shuffle()
+getObjectFromGUID("cfda4a").setPositionSmooth({-13.47, 1.50, -1.99})
+getObjectFromGUID("cfda4a").setRotation({0.00, 180.00, 180.00})
+getObjectFromGUID("cfda4a").shuffle()
 
 Espera(1)
 broadcastToAll("<<< Aguardando carregamento para posicionar os tokens.  >>>", "White")
@@ -3180,7 +3180,7 @@ Decks_Fixos = { "0bdd8e", "14d2d5", "24dc8a" }
 
 Decks_Base = { "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" } -- 7ae28e
-Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "72d26b" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7" }
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 ---Coloca nas bags
@@ -3258,7 +3258,7 @@ function Cor_Decks_Original()
 
 Decks_Base = { "0bdd8e", "14d2d5", "24dc8a", "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" }
-Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "72d26b" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7" }
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 Bag_Decks = getObjectFromGUID("c24b98")
