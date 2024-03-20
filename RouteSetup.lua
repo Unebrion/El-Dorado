@@ -218,7 +218,7 @@ Bag_Cartas_Exp = getObjectFromGUID("c892f0")
 if getObjectFromGUID("1999e7") then Bag_Cartas_Exp.putObject(getObjectFromGUID("1999e7")) end --Geologo
 if getObjectFromGUID("e22baf") then Bag_Cartas_Exp.putObject(getObjectFromGUID("e22baf")) end --Tokens
 if getObjectFromGUID("798fff") then Bag_Cartas_Exp.putObject(getObjectFromGUID("798fff")) end --Xamã
-if getObjectFromGUID("cfda4a") then Bag_Cartas_Exp.putObject(getObjectFromGUID("cfda4a")) end --Herois
+if getObjectFromGUID("cfda4a") then Bag_Cartas_Exp.putObject(getObjectFromGUID("cfda4a")) end --Heroes
 if getObjectFromGUID("b986e7") then Bag_Cartas_Exp.putObject(getObjectFromGUID("b986e7")) end --Animais
 if getObjectFromGUID("17f460") then Bag_Cartas_Exp.putObject(getObjectFromGUID("17f460")) end --Desbravadora
 
@@ -293,8 +293,8 @@ Pos_Tab = Tab_Cartas.getPosition()
     getObjectFromGUID("798fff").setPosition(Pos_Tab + vector(  0.95, 1, 6.6)) --Xamã
     getObjectFromGUID("1999e7").setPosition(Pos_Tab + vector(  3.00, 1, 6.6)) --Geologo
     getObjectFromGUID("17f460").setPosition(Pos_Tab + vector(  5.10, 1, 6.6)) --Desbravadora
-    getObjectFromGUID("b986e7").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Animais
-    getObjectFromGUID("cfda4a").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Herois
+    getObjectFromGUID("b986e7").setPosition(Pos_Tab + vector(  8.15, 1, 3.4)) --Familiars
+    getObjectFromGUID("cfda4a").setPosition(Pos_Tab + vector( 10.15, 1, 3.4))  --Heroes
 
   elseif N_decks == 5 then
     Bag_Cartas_Exp.takeObject({position= {26.00, 1.55, 14.00}})
@@ -1128,7 +1128,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 1 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 1: Viagem ao Desconhecido \nDificuldade: Média")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 1: Journey into the Unknown \nDifficulty: Medium")
 
 --Set posicionamento dos tiles   --4: 30° / 5: 330° / 6: 270° / 1: 210° / 2: 150° /3: 90°
 Peca_B.setPosition({13.78, 1.58, 6.72})       Peca_B.setRotation({0, 150, 0})       Peca_B.setDescription(2)      Peca_B.setLock(true)
@@ -1180,7 +1180,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 2 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 2: Atravéz dos demônios \nDificuldade: Média")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 2: Demon Gorge \nDifficulty: Medium")
 
 --Set posicionamento dos tiles                                                 -- 1: 210° / 2: 150° /3: 90° / 4: 30° / 5: 330° / 6: 270° /
 Peca_A.setPosition({-10.79, 1.58, 0.36})        Peca_A.setRotation({0.00, 210.00, 0.00})         Peca_A.setLock(true)       Peca_A.setDescription(1)
@@ -1238,7 +1238,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 3 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 3: A ROTA DOS PEREGRINOS \nDificuldade: Média")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 3: Path of Pilgrims \nDifficulty: Medium")
 
 --Set posicionamento dos tiles
 Peca_B.setPosition({-11.20, 1.58, -1.01})         Peca_B.setRotation({0.00, 269.99, 0.00})            Peca_B.setLock(true)
@@ -1294,7 +1294,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 4 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 4: Foz do Grande Rio \nDificuldade: Difícil")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 4: River Delta \nDifficulty: Hard")
 
 --Set posicionamento dos tiles
 Peca_A.setPosition({-3.42, 1.58, 5.30})        Peca_A.setRotation({0,180,0})                   Peca_A.setLock(true)
@@ -1350,7 +1350,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 5 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 5: Fim da Linha \nDificuldade: Difícil")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 5: Blind Spot \nDifficulty: Hard")
 
 --Set posicionamento dos tiles
 Peca_A.setPosition({-5.70, 1.58, 12.02})        Peca_A.setRotation({0.00, 254.89, 0.00})        Peca_A.setLock(true)
@@ -1404,7 +1404,7 @@ getObjectFromGUID("b5fb7e").setPosition({0.00, -33, 0.00})
 
 --Set textos
 broadcastToAll("<<< Preparing Map 6 >>>", "White")
-getObjectFromGUID("6565c7").setValue("[Exp] Circuito 6: Cruzando o caminho \nDificuldade: Difícil")
+getObjectFromGUID("6565c7").setValue("[Exp] Route 6: Across the Pass \nDifficulty: Hard")
 
 --Set posicionamento dos tiles
 Peca_O.setScale({1.65, 1.00, 1.65})
@@ -3180,7 +3180,7 @@ Decks_Fixos = { "0bdd8e", "14d2d5", "24dc8a" }
 
 Decks_Base = { "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" } -- 7ae28e
-Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7", "cfda4a"}
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 ---Coloca nas bags
@@ -3192,7 +3192,7 @@ for i = 1, 9, 1 do
     if getObjectFromGUID(Decks_Promo[i]) then Bag_Decks.putObject(getObjectFromGUID(Decks_Promo[i])) end
 end
 
-for i = 1, 5, 1 do
+for i = 1, 6, 1 do
     if getObjectFromGUID(Decks_Exp[i]) then Bag_Decks.putObject(getObjectFromGUID(Decks_Exp[i])) end
 end
 
@@ -3258,7 +3258,7 @@ function Cor_Decks_Original()
 
 Decks_Base = { "0bdd8e", "14d2d5", "24dc8a", "a412fc", "075691", "f50494", "862648", "0574a4", "262278", "1a5b95", "33b7f9", "c26af9" }
 Decks_Promo = { "48a8d8", "fe1976", "af9a9c", "7c936e", "310a27", "c84478", "2c6b51", "f73e48", "7ae28e" }
-Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7" }
+Decks_Exp = { "e22baf", "798fff", "1999e7", "17f460", "b986e7", "cfda4a" }
 Decks_MA = { "21eb22", "742e16", "87968a", "ca12ca" }
 
 Bag_Decks = getObjectFromGUID("c24b98")
@@ -3271,7 +3271,7 @@ Pos_Tab = Tab_Cartas.getPosition()
 -- Coloca tudo nas Bags
 if getObjectFromGUID(Decks_Base[1])  then printToAll("Using Base Deck", "White") for i = 1, 12, 1 do  Bag_Decks.putObject(getObjectFromGUID(Decks_Base[i]))  end else printToAll("Base Deck Not Found", "White")  end Espera(0.1)
 if getObjectFromGUID(Decks_Promo[1]) then printToAll("Using Promo Deck", "White") for i = 1,  9, 1 do  Bag_Promo.putObject(getObjectFromGUID(Decks_Promo[i])) end else printToAll("Promo Deck Not Found", "White")   end Espera(0.1)
-if getObjectFromGUID(Decks_Exp[1])   then printToAll("Using Expansions Deck", "White") for i = 1,  5, 1 do  Bag_Exp.putObject(getObjectFromGUID(Decks_Exp[i]))   end else printToAll("Expansion Deck Not Found", "White")   end Espera(0.1)
+if getObjectFromGUID(Decks_Exp[1])   then printToAll("Using Expansions Deck", "White") for i = 1,  6, 1 do  Bag_Exp.putObject(getObjectFromGUID(Decks_Exp[i]))   end else printToAll("Expansion Deck Not Found", "White")   end Espera(0.1)
 if getObjectFromGUID(Decks_MA[1])    then printToAll("Using Homebrew Deck", "White") for i = 1,  4, 1 do  Bag_MA.putObject(getObjectFromGUID(Decks_MA[i]))    end else printToAll("Homebrew Deck Not found", "White")   end Espera(0.1)
 Espera(1)
 

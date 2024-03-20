@@ -19,29 +19,6 @@ print(Cor_Jogador_Clicou)
 end
 
 
--- Blockade Callbacks --
-
-x_bar = 0
-function takeBlockade(object, playerColorClicked)
-B_guid = object.getGUID() -- da378b
-  
-barreira = getObjectFromGUID(B_guid)
-players = playerColorClicked
-
-giveObjectToPlayer(barreira,players, 0.65)
-
-x_bar = x_bar +0.6
-
-barreira.removeButton(0)
-end
-
-function giveObjectToPlayer(object, player, extraDistance)
---local hand = Player[playerColour]:getPlayerHand()
-local playerHand = Player[player].getPlayerHand();
-
-  object.setRotationSmooth({0,playerHand["rot_y"]+0,0})
-  object.setPositionSmooth({playerHand["pos_x"]+ 4.5 + x_bar +playerHand["trigger_forward_x"]*15,   1.5,   playerHand["pos_z"]-1.3+(playerHand["trigger_forward_z"]*extraDistance)*15})
-end
 
 function Chama_Baixar()
 --  print(playerColorClicked)
@@ -86,4 +63,27 @@ function onScriptingButtonDown(index, player_color)
   if index == 3 then 
     print("andy sucks .com")
   end
+end
+
+
+x_bar = 0
+function takeBlockade(object, playerColorClicked)
+B_guid = object.getGUID() -- da378b
+  
+barreira = getObjectFromGUID(B_guid)
+players = playerColorClicked
+
+giveObjectToPlayer(barreira,players, 0.65)
+
+x_bar = x_bar +0.6
+
+barreira.removeButton(0)
+end
+
+function giveObjectToPlayer(object, player, extraDistance)
+--local hand = Player[playerColour]:getPlayerHand()
+local playerHand = Player[player].getPlayerHand();
+
+  object.setRotationSmooth({0,playerHand["rot_y"]+0,0})
+  object.setPositionSmooth({playerHand["pos_x"]+ 4.5 + x_bar +playerHand["trigger_forward_x"]*15,   1.5,   playerHand["pos_z"]-1.3+(playerHand["trigger_forward_z"]*extraDistance)*15})
 end

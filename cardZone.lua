@@ -539,7 +539,7 @@ local cartas = Zona_remove.getObjects()
     obj.setPositionSmooth({50, 5+0.1*j, 14})
     end
     if(obj.tag == "Tile") then
-      if NOME == "Maldição" then
+      if NOME == "Curse" then
       Bag_maldicao_jogadas.putObject(obj)
       broadcastToAll("The Player ".. Player[Cor_J].steam_name .. " discarded a curse.", Cor_J)
       elseif NOME == "CavernaEXP" then
@@ -722,7 +722,7 @@ local cartas = Zona_remove.getObjects()
     if(obj.tag == "Card") then     obj.setPositionSmooth({50, 5+0.1*j, 14})     end
     if(obj.tag == "Deck") then     obj.setPositionSmooth({50, 5+0.1*j, 14})     end
     if(obj.tag == "Tile") then
-            if NOME == "Maldição" then       Bag_maldicao_jogadas.putObject(obj)
+            if NOME == "Curse" then       Bag_maldicao_jogadas.putObject(obj)
             elseif NOME == "CavernaEXP" then     Bag_token_jogados.putObject(obj)
             else
             obj.setPositionSmooth({50, 5+0.1*j, 14})
@@ -782,7 +782,7 @@ local cartas = Zona_remove.getObjects()
     obj.setPositionSmooth({50, 5+0.1*j, 14})
     end
     if(obj.tag == "Tile") then
-      if NOME == "Maldição" then
+      if NOME == "Curse" then
       Bag_maldicao_jogadas.putObject(obj)
       broadcastToAll("The Player ".. Player[Cor_J].steam_name .. " discarded a curse.", Cor_J)
     elseif NOME == "CavernaEXP" then
@@ -860,7 +860,7 @@ local cartas = Zona_remove.getObjects()
     obj.setPositionSmooth({50, 5+0.1*j, 14})
     end
     if(obj.tag == "Tile") then
-      if NOME == "Maldição" then
+      if NOME == "Curse" then
       Bag_maldicao_jogadas.putObject(obj)
       broadcastToAll("The Player ".. Player[Cor_J].steam_name .. " discarded a curse.", Cor_J)
       else
