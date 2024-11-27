@@ -929,7 +929,7 @@ local cartas = Zona_Baralho.getObjects()
     end
 end -- for
 
-printToAll("The Player ".. Player[Cor_J].steam_name .. " Comprou " .. N_Repete .. " cartas." , Cor_J)
+printToAll("The Player ".. Player[Cor_J].steam_name .. " Bought " .. N_Repete .. " cards." , Cor_J)
 printToAll("-----------------------------------------", Cor_J)
 
 Espera(0.5)
